@@ -1,0 +1,7 @@
+{
+  "name": "thebestworst",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
