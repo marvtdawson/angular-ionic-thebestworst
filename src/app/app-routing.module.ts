@@ -2,7 +2,7 @@ import { NgModule} from "@angular/core";
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomePage } from "../pages/home/home";
-import { AboutPage } from "../pages/about/about";
+// import { AboutComponent } from "../pages/about/about.component";
 
 
 const appRoutes: Routes = [
@@ -12,14 +12,14 @@ const appRoutes: Routes = [
 
 @NgModule ({
   declarations: [
-    AboutPage
+    //AboutComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes)
   ],
   exports: [
     RouterModule,
-    AboutPage
+    //AboutComponent
   ]
 })
 

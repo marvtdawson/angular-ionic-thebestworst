@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
+import { ErrorHandler, NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { BsNavbarComponent } from '../app/layout/bs-navbar/bs-navbar';
-import { BsFooterComponent } from '../app/layout/bs-footer/bs-footer';
+import { BsNavbarComponent } from './layout/bs-navbar/bs-navbar.component';
+import { BsFooterComponent } from './layout/bs-footer/bs-footer';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 
@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppAuthRoutingModule } from "../components/app-auth-routing.module";
+import { SiteDataProvider } from '../providers/site-data/site-data';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,11 @@ import { AppAuthRoutingModule } from "../components/app-auth-routing.module";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    SiteDataProvider
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ]
 })
 export class AppModule {}

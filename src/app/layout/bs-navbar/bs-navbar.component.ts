@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SiteDataProvider} from "../../../providers/site-data/site-data";
 
 /**
  * Generated class for the BsNavbarComponent component.
@@ -8,15 +9,13 @@ import { Component } from '@angular/core';
  */
 @Component({
   selector: 'bs-navbar',
-  templateUrl: 'bs-navbar.html'
+  templateUrl: 'bs-navbar.component.html',
 })
 export class BsNavbarComponent {
 
-  text: string;
-
-  constructor() {
-    console.log('Hello BsNavbarComponent Component');
-    this.text = 'Hello World';
+   constructor(private siteData: SiteDataProvider) {
   }
+
+  siteName = this.siteData.siteName;
 
 }

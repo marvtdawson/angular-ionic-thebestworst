@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import {SiteDataProvider} from "../providers/site-data/site-data";
 
 @Component({
   templateUrl: 'app.html'
@@ -13,10 +14,13 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
+  siteName = this.siteData.siteName;
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar,
+              public splashScreen: SplashScreen,
+              public siteData: SiteDataProvider) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation

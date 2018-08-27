@@ -1,4 +1,94 @@
-<!-- Generated template for the BsFooterComponent component -->
-<div>
-  {{text}}
-</div>
+<!-- START FOOTER CONTAINER -->
+<ion-footer>
+  <div class="container-fluid footer">
+
+  <div class="social-icons-wrapper">
+    <ion-row>
+      <ion-col>
+        <ion-icon>
+          <a href="https://www.facebook.com/whoslaundry09" target="_blank">
+            <img src="../../assets/img/social-icons/icons8-facebook-filled-50.png" alt="">
+          </a>
+        </ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon>
+          <a href="https://www.instagram.com/whoslaundry09/" target="_blank">
+            <img src="../../assets/img/social-icons/icons8-instagram-filled-50.png" alt="">
+          </a>
+        </ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon>
+          <a href="https://www.linkedin.com/in/marvin-t-dawson-0b89a67/" target="_blank">
+            <img src="../../assets/img/social-icons/icons8-linkedin-filled-50.png" alt="">
+          </a>
+        </ion-icon>
+      </ion-col>
+
+      <ion-col>
+        <ion-icon>
+          <a href="https://twitter.com/whoslaundry09" target="_blank">
+            <img src="../../assets/img/social-icons/icons8-twitter-filled-50.png" alt="">
+          </a>
+        </ion-icon>
+      </ion-col>
+    </ion-row>
+  </div>
+
+
+  <div class="row footer-wrapper">
+    <div class="col-sm-4 col-md-4 widget footer-nav-subdiv">
+      <h3>STAY CONNECTED</h3>
+      <h6>Property Managers Can:</h6>
+      <p>Save Money</p>
+      <p>Increase Profits</p>
+      <p>Communicate Instant Messages</p>
+      <p>Minimize Risk of Property Damage</p>
+    </div> <hr class="footer-hr">
+
+    <div class="col-sm-4 col-md-4 widget footer-nav-subdiv">
+      <h3>STAY INFORMED</h3>
+      <h6>Renters / Tenants Can:</h6>
+      <p>Reduce Washing Machine Wait Time</p>
+      <p>Get Notifications</p>
+      <p>Set Reminders</p>
+      <p>Instantly Contact Property Management</p>
+      <p></p>
+    </div><hr class="footer-hr">
+
+    <div class="col-sm-4 col-md-4 widget footer-nav-subdiv">
+      <h3>STAY ENGAGED</h3>
+      <h6>Local Businesses Can:</h6>
+      <p>Improve Direct Marketing</p>
+      <p>Create New Customers</p>
+      <p>Retain Existing Customers</p>
+      <p>Increase Profits</p>
+    </div><hr class="footer-hr">
+
+  </div>
+
+  <ion-row class="footer-nav">
+    <ion-col >
+      <a [navPush]="pushAboutPage">ABOUT</a>
+    </ion-col>
+    <ion-col >
+      <a [navPush]="pushServicesPage">SERVICES</a>
+    </ion-col>
+    <ion-col >
+      <a [navPush]="pushPrivacyPage">PRIVACY</a>
+    </ion-col>
+    <ion-col >
+      <a [navPush]="pushTermsAndConsPage">TERMS</a>
+    </ion-col>
+    <ion-col>
+      <a [navPush]="pushContactPage">CONTACT</a>
+    </ion-col>
+  </ion-row>
+  <div class="site-footer">
+    The {{ siteName }} {{ year }} site is a Progressive Web Site, designed using a Angular 6 & Ionic 3.  The site was developed by webmaster / Full Stack Software Engineer
+    <a href="http://www.marvintdawson.com">Marvin Dawson</a>.
+  </div>
+
+  </div>
+</ion-footer>

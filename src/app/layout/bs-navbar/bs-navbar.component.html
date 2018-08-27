@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <div class="header-logo-wrapper" (click)="navigateToHomePage()">
+        <!--img class="header-logo" [src]="siteLogo"-->
+        <div class="header-site-name" color="primary">{{ siteName }}</div>
+      </div>
+    </ion-title>
+    <ion-buttons end *ngIf="Profile">
+      <button ion-button (click)="navigateToSearchUserPage()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+    <div class="desktop-nav-links-wrapper">
+      <ion-buttons>
+        <button ion-button block class="signin-button" [navPush]="pushRegisterPage">
+          <span class="signup-button-text">Sign Up</span>
+        </button>
+        <button ion-button outline color="primary" [navPush]="pushLoginPage">Login</button>
+        <div *ngIf="" class="admin-user-login">
+          <button ion-button outline color="primary" [navPush]="pushUserProfile" (click)="userProfile()">UserName</button>
+          <button ion-button outline color="primary" [navPush]="pushLogoutPage" (click)="onLogOut()">Logout</button>
+        </div>
+      </ion-buttons>
+    </div>
+  </ion-navbar>
+</ion-header>

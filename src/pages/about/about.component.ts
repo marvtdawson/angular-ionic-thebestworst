@@ -11,9 +11,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-about',
-  templateUrl: 'about.html',
+  templateUrl: 'about.component.html',
 })
-export class AboutPage {
+export class AboutComponent {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
