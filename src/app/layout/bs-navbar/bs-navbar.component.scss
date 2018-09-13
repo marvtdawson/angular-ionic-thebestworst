@@ -1,5 +1,127 @@
 bs-navbar {
 
+  @media (min-width: 320px){
+
+    .bar-button-default-md{
+      visibility: visible;
+    }
+    .header-logo-wrapper{
+      width: 95%;
+      display: block;
+    }
+    .header-logo{
+      float:none;
+      width: 70%;
+    }
+    .desktop-nav-links-wrapper{
+     visibility: hidden;
+    }
+   bs-navbar .header-logo-wrapper {
+      width: 95%;
+    }
+  }
+
+  @media(min-width: 360px){
+    .header-logo-wrapper{
+      width: 28%;
+    }
+    .header-logo{
+    }
+  }
+
+  @media(min-width: 375px){
+    .header-logo-wrapper{
+    }
+    .header-logo{
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 411px){
+    .header-logo-wrapper{
+    }
+    .header-logo{
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 414px){
+    .header-logo-wrapper{
+      width: 30%;
+    }
+    .header-logo{
+      width: 85%;
+    }
+  }
+
+  @media (min-width: 568px){
+    .header-logo{
+      width: 25%;
+    }
+  }
+
+  @media (min-width: 667px){
+    .header-logo-wrapper{
+    }
+  }
+
+  @media (max-width: 736px) {
+    .desktop-nav-links-wrapper {
+      display: none;
+    }
+  }
+
+  @media(min-width: 768px) {
+    .bar-button-default-md,
+    .bar-button-default-ios{
+      visibility: visible;
+    }
+    .back-button-ios,
+    .back-button-md{
+      visibility: visible;
+    }
+    .desktop-nav-links-wrapper{
+      visibility: visible;
+    }
+    .header-site-name{
+      position: relative;
+      margin: 0 auto 0;
+      float: none;
+      display: none;
+      visibility: hidden;
+    }
+    .header-logo-wrapper{
+      margin: 0 auto 0;
+      float: none;
+      width: 10%;
+    }
+    .header-logo{
+      float:none;
+      width: 100%;
+      padding: 0;
+      margin: 0 auto 0;
+    }
+  }
+
+  @media (min-width: 812px){
+    .bar-button-default-md,
+    .bar-button-default-ios{
+      visibility: visible;
+    }
+    .desktop-nav-links-wrapper {
+      display: none;
+    }
+    .header-logo-wrapper{
+      margin: 0 auto 0;
+      float: none;
+      width: 33%;
+    }
+  }
+
+  @media (min-width: 1024px){
+
+  }
+
   .header,
   .header-ios{
     height: 75px;
@@ -79,121 +201,6 @@ bs-navbar {
   }
   .signup-button-text{
     color: #ffffff;
-  }
-
-  @media (max-width: 1024px){
-
-  }
-
-  @media (max-width: 812px){
-    .bar-button-default-md,
-    .bar-button-default-ios{
-      visibility: visible;
-    }
-    .desktop-nav-links-wrapper {
-      display: none;
-    }
-    .header-logo-wrapper{
-      margin: 0 auto 0;
-      float: none;
-      width: 33%;
-    }
-  }
-
-  @media(max-width: 768px) {
-    .bar-button-default-md,
-    .bar-button-default-ios{
-      visibility: visible;
-    }
-    .back-button-ios,
-    .back-button-md{
-      visibility: visible;
-    }
-    .desktop-nav-links-wrapper{
-      display: none;
-    }
-    .header-site-name{
-      position: relative;
-      margin: 0 auto 0;
-      float: none;
-      display: none;
-      visibility: hidden;
-    }
-    .header-logo-wrapper{
-      margin: 0 auto 0;
-      float: none;
-      width: 10%;
-    }
-    .header-logo{
-      float:none;
-      width: 100%;
-      padding: 0;
-      margin: 0 auto 0;
-    }
-  }
-
-  @media (max-width: 736px) {
-    .desktop-nav-links-wrapper {
-      display: none;
-    }
-  }
-
-
-  @media (max-width: 667px){
-    .header-logo-wrapper{
-    }
-  }
-
-  @media (max-width: 568px){
-    .header-logo{
-      width: 25%;
-    }
-  }
-
-
-  @media (max-width: 414px){
-    .header-logo-wrapper{
-      width: 30%;
-    }
-    .header-logo{
-      width: 85%;
-    }
-  }
-
-
-  @media (max-width: 411px){
-    .header-logo-wrapper{
-    }
-    .header-logo{
-      width: 60%;
-    }
-  }
-
-
-  @media(max-width: 375px){
-    .header-logo-wrapper{
-    }
-    .header-logo{
-      width: 100%;
-    }
-  }
-
-  @media(max-width: 360px){
-    .header-logo-wrapper{
-      width: 28%;
-    }
-    .header-logo{
-    }
-  }
-
-  @media (max-width: 320px){
-    .header-logo-wrapper{
-      width: 59%;
-    }
-    .header-logo{
-      float:none;
-      width: 70%;
-    }
   }
 
 }

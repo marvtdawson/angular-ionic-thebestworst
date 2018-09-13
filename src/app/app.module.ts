@@ -14,6 +14,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AppRoutingModule } from "./app-routing.module";
 import { AppAuthRoutingModule } from "../components/app-auth-routing.module";
 import { SiteDataProvider } from '../providers/site-data/site-data';
+import {RegisterPage} from "../pages/register/register";
+import {LoginPage} from "../pages/login/login";
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     BsNavbarComponent,
     BsFooterComponent,
     HomePage,
-    ListPage
+    ListPage,
+    LoginPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,9 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     BsNavbarComponent,
     BsFooterComponent,
     HomePage,
-    ListPage
+    ListPage,
+    RegisterPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
