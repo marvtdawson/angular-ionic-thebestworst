@@ -20,6 +20,7 @@ export class AboutComponent {
   }
 
   siteName = this.siteData.siteName;
+  pageTitle = 'ABOUT';
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutPage');

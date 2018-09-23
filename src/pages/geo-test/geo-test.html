@@ -1,0 +1,15 @@
+<!-- site navigation -->
+<bs-navbar></bs-navbar>
+
+
+<ion-content padding>
+  {{ pageTitle }}
+  <ion-list>
+    <button ion-button #geoLat (click)="getGeoLatitude('geoLat')">Get Latitude</button>
+
+  </ion-list>
+  <ion-list>
+    <button ion-button #geoLong (click)="getGeoLongitude('geoLong')">Get Longitude</button>
+
+  </ion-list>
+</ion-content>

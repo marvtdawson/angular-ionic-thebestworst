@@ -19,9 +19,24 @@ export class HomePage {
   async shareNow() {
     const alert = await this.alertCtrl.create({
       title: 'LOCATION',
-      subTitle: 'Connect',
-      message: 'Do you grant The Best Work Xperience app the rights to access your device location?',
-      buttons: ['No', 'OK']
+      subTitle: 'Connection',
+      message: '""https://www.thebestworst.com" Would Like To Use Your Current Location',
+      buttons: [
+        {
+          text: 'Don\'t Allow',
+          role: 'cancel',
+
+          handler: () => {
+            console.log('You said cancel this');
+          }
+        },
+        {
+          text:'OK',
+          handler: () => {
+            console.log('Ok Great!!');
+          }
+        }
+      ]
     });
     return await alert.present();
   }

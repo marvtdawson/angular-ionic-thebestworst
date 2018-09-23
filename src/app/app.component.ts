@@ -7,7 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { SiteDataProvider } from "../providers/site-data/site-data";
 import { RegisterPage } from "../pages/register/register";
 import { LoginPage } from "../pages/login/login";
-import {AboutComponent} from "../pages/about/about.component";
+import { AboutComponent } from "../pages/about/about.component";
+import { GeoTestPage } from "../pages/geo-test/geo-test";
 
 @Component({
   templateUrl: 'app.html'
@@ -30,6 +31,7 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'About',  component: AboutComponent },
       { title: 'Login', component: LoginPage },
+      { title: 'Geo Test', component: GeoTestPage },
       { title: 'Register', component: RegisterPage }
     ];
 

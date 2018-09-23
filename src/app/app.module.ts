@@ -18,6 +18,8 @@ import { AppAuthRoutingModule } from "../components/app-auth-routing.module";
 import { SiteDataProvider } from '../providers/site-data/site-data';
 import { ToastService } from "../providers/toast-service/toast-service";
 import { ConnectionService } from '../providers/connection-service/connection-service';
+import { GeoTestPage } from "../pages/geo-test/geo-test";
+import {Geolocation} from "@ionic-native/geolocation";
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { ConnectionService } from '../providers/connection-service/connection-se
     HomePage,
     AboutComponent,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    GeoTestPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { ConnectionService } from '../providers/connection-service/connection-se
     HomePage,
     AboutComponent,
     RegisterPage,
-    LoginPage
+    LoginPage,
+    GeoTestPage
   ],
   providers: [
     StatusBar,
@@ -52,7 +56,8 @@ import { ConnectionService } from '../providers/connection-service/connection-se
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SiteDataProvider,
     ToastService,
-    ConnectionService
+    ConnectionService,
+    Geolocation
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
