@@ -1,10 +1,53 @@
 page-home {
 
+  @media(min-width: 320px ) {
+    .jumbotron-wrapper {
+      width: 100%;
+      height: 350px;
+      background: url('../../assets/imgs/dallas1_cropped.jpg') no-repeat;
+    }
+    .homePage-BriefSummary-wrapper{
+      width: 100%;
+      /* margin: 0 0 0 6%;*/
+      padding: 1px;
+      position: absolute;
+    }
+    .homePage-BriefSummary {
+      width: 92%;
+      margin: 45% auto 0;
+      font-family: Arial sans-serif;
+      font-size: 16px;
+      color: #000000;
+      text-align: center;
+     /* background-color: #545454;*/
+      opacity: 0.8;
+      border-radius: 14px;
+      padding: 5px;
+    }
+    .share-now {
+      width: 50%;
+      height: 30px;
+      background: none;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+    .free-reminder-text p {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
   ion-content {
     margin: 76px auto 0;
     padding: 0;
   }
    .jumbotron-wrapper{
+     height: 700px;
     margin: -15px auto 0;
   }
 

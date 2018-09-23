@@ -5,7 +5,7 @@ bs-navbar {
     .bar-button-default-md{
       visibility: visible;
     }
-    .header-logo-wrapper{
+    .header-logo-wrapper {
       width: 95%;
       display: block;
     }
@@ -16,9 +16,7 @@ bs-navbar {
     .desktop-nav-links-wrapper{
      visibility: hidden;
     }
-   bs-navbar .header-logo-wrapper {
-      width: 95%;
-    }
+
   }
 
   @media(min-width: 360px){
@@ -30,16 +28,12 @@ bs-navbar {
   }
 
   @media(min-width: 375px){
-    .header-logo-wrapper{
-    }
     .header-logo{
       width: 100%;
     }
   }
 
   @media (min-width: 411px){
-    .header-logo-wrapper{
-    }
     .header-logo{
       width: 60%;
     }
@@ -61,8 +55,6 @@ bs-navbar {
   }
 
   @media (min-width: 667px){
-    .header-logo-wrapper{
-    }
   }
 
   @media (max-width: 736px) {
@@ -87,8 +79,6 @@ bs-navbar {
       position: relative;
       margin: 0 auto 0;
       float: none;
-      display: none;
-      visibility: hidden;
     }
     .header-logo-wrapper{
       margin: 0 auto 0;
@@ -112,8 +102,6 @@ bs-navbar {
       display: none;
     }
     .header-logo-wrapper{
-      margin: 0 auto 0;
-      float: none;
       width: 33%;
     }
   }
@@ -122,85 +110,90 @@ bs-navbar {
 
   }
 
-  .header,
-  .header-ios{
-    height: 75px;
-  }
-  .ion-header > header {
-    margin-top: 55px;
-  }
-  ion-header, ion-navbar,
-  .toolbar-background{
-    border-width: 0 0 0.00px;
-  }
-  .toolbar{
-    height: 75px;
-  }
-  .header-ios,
-  .toolbar-background,
-  .toolbar-background-ios,
-  .toolbar-background-ios:last-child,
-  .toolbar-background-md{
-    border-width: 0 0 0.00px;
-    border-style: none;
-  }
-  .header-logo-wrapper{
-    width: 25%;
-    float: left;
-  }
-  .header-logo{
-    float:left;
-    width: 60px;
-    height: 60px;
-    padding: 3px;
-  }
-  .header-logo-wrapper :hover,
-  .header-logo :hover{
-    cursor: pointer;
-  }
-  .header-site-name{
-    float: left;
-    margin: 20px 0 0 10px;
-  }
-  .bar-button-default-md{
-    visibility: hidden;
-  }
-  .toolbar,
-  .toolbar-background-md{
-    border:none;
-  }
-  .toolbar-content,
-  .toolbar-content-md{
-    max-width: 85%;
-    margin: 0 auto 0;
-  }
-  .toolbar-title{
-    margin: 0 auto 0;
-  }
-  .back-button-ios{
-    visibility: hidden;
-  }
-  #desktopnav{
-    display: block;
-    color: #ffffff;
-  }
-  .desktop-nav-links-wrapper{
-    float: right;
-    width: 300px;
-    margin-top: -40px;
-  }
-  .desktop-nav-links{
-    float: left;
-    visibility: visible;
-    border: 1px solid red;
-    color: #000000;
-  }
-  .signin-button{
-    visibility: visible;
-    background-color: #488aff;
-  }
-  .signup-button-text{
-    color: #ffffff;
+
+  @media (min-width: 1200px) {
+
+    .header,
+    .header-ios{
+      height: 75px;
+    }
+    .ion-header > header {
+      margin-top: 55px;
+    }
+    ion-header, ion-navbar,
+    .toolbar-background{
+      border-width: 0 0 0.00px;
+    }
+    .toolbar{
+      height: 75px;
+    }
+    .header-ios,
+    .toolbar-background,
+    .toolbar-background-ios,
+    .toolbar-background-ios:last-child,
+    .toolbar-background-md{
+      border-width: 0 0 0.00px;
+      border-style: none;
+    }
+    .header-logo-wrapper{
+      width: 25%;
+      float: left;
+    }
+    .header-logo{
+      float:left;
+      width: 60px;
+      height: 60px;
+      padding: 3px;
+    }
+    .header-logo-wrapper :hover,
+    .header-logo :hover{
+      cursor: pointer;
+    }
+    .header-site-name{
+      float: left;
+      margin: 20px 0 0 10px;
+    }
+    .bar-button-default-md{
+      visibility: hidden;
+    }
+    .toolbar,
+    .toolbar-background-md{
+      border:none;
+    }
+    .toolbar-content,
+    .toolbar-content-md{
+      max-width: 85%;
+      margin: 0 auto 0;
+    }
+    .toolbar-title{
+      margin: 0 auto 0;
+    }
+    .back-button-ios{
+      visibility: hidden;
+    }
+    #desktopnav{
+      display: block;
+      color: #ffffff;
+    }
+    .desktop-nav-links-wrapper{
+      float: right;
+      width: 300px;
+      margin-top: -40px;
+    }
+    .desktop-nav-links{
+      float: left;
+      visibility: visible;
+      border: 1px solid red;
+      color: #000000;
+    }
+    .signin-button{
+      visibility: visible;
+      background-color: #488aff;
+    }
+    .signup-button-text{
+      color: #ffffff;
+    }
+
   }
 
 }

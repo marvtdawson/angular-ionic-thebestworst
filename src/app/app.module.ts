@@ -6,7 +6,9 @@ import { MyApp } from './app.component';
 import { BsNavbarComponent } from './layout/bs-navbar/bs-navbar.component';
 import { BsFooterComponent } from './layout/bs-footer/bs-footer';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { AboutComponent } from '../pages/about/about.component';
+import { RegisterPage } from "../pages/register/register";
+import { LoginPage } from "../pages/login/login";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,8 +16,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AppRoutingModule } from "./app-routing.module";
 import { AppAuthRoutingModule } from "../components/app-auth-routing.module";
 import { SiteDataProvider } from '../providers/site-data/site-data';
-import {RegisterPage} from "../pages/register/register";
-import {LoginPage} from "../pages/login/login";
+import { ToastService } from "../providers/toast-service/toast-service";
+import { ConnectionService } from '../providers/connection-service/connection-service';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,7 @@ import {LoginPage} from "../pages/login/login";
     BsNavbarComponent,
     BsFooterComponent,
     HomePage,
-    ListPage,
+    AboutComponent,
     LoginPage,
     RegisterPage
   ],
@@ -39,7 +42,7 @@ import {LoginPage} from "../pages/login/login";
     BsNavbarComponent,
     BsFooterComponent,
     HomePage,
-    ListPage,
+    AboutComponent,
     RegisterPage,
     LoginPage
   ],
@@ -47,7 +50,9 @@ import {LoginPage} from "../pages/login/login";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    SiteDataProvider
+    SiteDataProvider,
+    ToastService,
+    ConnectionService
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

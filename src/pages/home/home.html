@@ -2,98 +2,18 @@
 <bs-navbar></bs-navbar>
 
 <ion-content>
-
   <div class="jumbotron-wrapper">
-    <img class="homeSlide_imgs" src="">
-    <iframe width="100%" height="700" src="https://www.youtube.com/embed/FfrAViXcodw?rel=0&amp;controls=0&amp;showinfo=0&amp;start=197&amp;end=230&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <!--iframe width="100%" height="700" src="https://www.youtube.com/embed/FfrAViXcodw?rel=0&amp;controls=0&amp;showinfo=0&amp;start=197&amp;end=230&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe-->
+    <div class="col-10 col-offset-1 homePage-BriefSummary-wrapper">
+      <div class="homePage-BriefSummary animated slideInDown delay-2s">
+        <p>Businesses Should Respect Your Presence</p>
+        <p>Share Your Shopping Xperience</p>
+        <button ion-button class="share-now" (click)="shareNow()">SHARE NOW</button>
+        <span class="free-reminder-text">
+          <p>HEY did we mention it's FREE!</p>
+        </span>
+      </div>
+    </div>
   </div>
 
-  <div class="main-content">
-    <ion-grid>
-      <ion-row justify-content-start class="flex-container">
-        <ion-col class="flex-item">
-          <div id="tier-1-overlay" >
-            <div id="tier-1-text">
-              <p>Really!! A online community for laundry?
-                <br> YES!!! well LAUNDRY and MORE...
-              </p>
-            </div>
-          </div>
-        </ion-col>
-        <ion-col class="flex-item">
-          <div>
-            <img src="" alt="">
-          </div>
-        </ion-col>
-      </ion-row>
-
-      <ion-row justify-content-end>
-        <ion-col class="tier-text">
-          <div class="tier-2-text-wrapper">
-            <ul>
-              <li>Download the app for FREE</li>
-              <li>Registration is Free!</li>
-              <li>Start using the app in under a minute.</li>
-            </ul>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div class="home-play-google-button">
-            <a href="">
-              <img src="" alt="" >
-            </a>
-          </div>
-          <div class="home-apple-store-text">
-            Coming Soon to the Apple Store
-          </div>
-        </ion-col>
-      </ion-row>
-
-      <ion-row justify-content-start class="flex-container">
-        <ion-col class="flex-item tier-text">
-          <div class="tier-3-text-wrapper">
-            <p>
-              Welcome to peace of mind while doing your laundry.<br> <br>
-              Avoid potential "mishaps".<br> <br>
-              By staying connected to your laundry, neighbors and tenants.
-            </p>
-          </div>
-        </ion-col>
-        <ion-col class="flex-item">
-          <div class="tier-3-image-wrapper">
-            <img src="" alt="">
-          </div>
-        </ion-col>
-      </ion-row>
-
-      <ion-row justify-content-end>
-        <ion-col class="tier-text">
-          <div class="home-page-text-wrapper">
-            <p>Your time is valuable, use {{ siteName }} mobile app to help reduce your washing wait time!</p>
-          </div>
-        </ion-col>
-        <ion-col>
-          <img src="" alt="">
-        </ion-col>
-      </ion-row>
-
-    </ion-grid>
-
-    <ion-card class="home-page-card">
-      <ion-card-content>
-        <ion-item text-wrap text-center>
-          <p>How can you use {{ siteName }} mobile app?</p>
-        </ion-item>
-        <ion-row>
-          <button ion-button color="primary" block (click)="navigateToServicePage()">Learn More</button>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-  </div> <!-- end main content div  -->
-
-  <!-- site footer -->
-  <bs-footer></bs-footer>
-
 </ion-content>
-

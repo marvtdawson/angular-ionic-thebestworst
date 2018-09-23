@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class SiteDataProvider {
 
-  siteName = 'The Best Worst';
+  siteName = 'Best Worst Xperience';
 
   constructor() {
 

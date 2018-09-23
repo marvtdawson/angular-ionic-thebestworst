@@ -3,12 +3,9 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-      <div class="header-logo-wrapper" (click)="navigateToHomePage()">
-        <ion-title>
-          <!--img class="header-logo" [src]="siteLogo"-->
+      <ion-title class="header-logo-wrapper" (click)="navigateToHomePage()">
           <div class="header-site-name" color="primary">{{ siteName }}</div>
-        </ion-title>
-      </div>
+      </ion-title>
     <ion-buttons end *ngIf="Profile">
       <button ion-button (click)="navigateToSearchUserPage()">
         <ion-icon name="add"></ion-icon>

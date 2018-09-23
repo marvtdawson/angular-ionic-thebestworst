@@ -17,37 +17,50 @@
 
 $background-color: (base-bg-color: #fff);
 
-div .scroll-content{
-  margin-top: 0;
-}
-ion-menu .menu-inner,
-ion-menu .ios .menu-inner,
-ion-menu .md .menu-inner{
-  background-color: transparent;
-}
-.page-content-top{
-  border: none;
-  p{
-    font-size:18px;
+
+@media(max-width: 320px) {
+  .ion-page > ion-content{
+    margin: 43px auto 0;
+    padding: 0;
   }
 }
-.ion-page > ion-content{
-  margin: 75px auto 0;
-  padding: 0;
-}
-ion-app.md,
-ion-app.ios {
-  padding: 0;
-}
-.label{
-  color: #000000;
-}
-.main-content-wrapper {
-  width: 100%;
-  margin: 53px auto 10px;
-  min-height: 505px;
-}
-.main-content{
-  width: 80%;
-  margin: 100px auto 100px;
+
+
+@media(min-width: 1200px) {
+
+  div .scroll-content {
+    margin-top: 0;
+  }
+  ion-menu .menu-inner,
+  ion-menu .ios .menu-inner,
+  ion-menu .md .menu-inner {
+    background-color: transparent;
+  }
+  .page-content-top {
+    border: none;
+    p {
+      font-size: 18px;
+    }
+  }
+  .ion-page > ion-content {
+    margin: 75px auto 0;
+    padding: 0;
+  }
+  ion-app.md,
+  ion-app.ios {
+    padding: 0;
+  }
+  .label {
+    color: #000000;
+  }
+  .main-content-wrapper {
+    width: 100%;
+    margin: 53px auto 10px;
+    min-height: 505px;
+  }
+  .main-content {
+    width: 80%;
+    margin: 100px auto 100px;
+  }
+
 }
