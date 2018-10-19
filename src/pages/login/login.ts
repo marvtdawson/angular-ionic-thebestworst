@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {SiteDataProvider} from "../../providers/site-data/site-data";
 
 /**
  * Generated class for the LoginPage page.
@@ -16,8 +17,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class LoginPage {
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+              private siteData: SiteDataProvider) {
   }
+
+  siteName = this.siteData.siteName;
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');

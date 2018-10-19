@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, AlertController, Platform } from 'ionic-angular';
+import { IonicPage, AlertController } from 'ionic-angular';
 import { Geolocation, Geoposition } from "@ionic-native/geolocation";
-
-/**
- * Generated class for the GeoTestPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -22,16 +15,15 @@ export class GeoTestPage {
 
   pageTitle = 'GEO TEST';
 
-  constructor(private platform: Platform,
-              private geolocation: Geolocation,
+  constructor(private geolocation: Geolocation,
               private alertCtrl: AlertController) {
   }
 
 
   async getGeoLatitude(getCoordinatePosition) {
-    await this.platform.ready();
     this.geoposition = await this.geolocation.getCurrentPosition();
     const geoLat = this.geoposition.coords.latitude;
+    console.log(geoLat);
     if (getCoordinatePosition === 'geoLat') {
       const alert = this.alertCtrl.create({
         title: 'Your Latitude Location',
@@ -42,7 +34,6 @@ export class GeoTestPage {
   }
 
   async getGeoLongitude(getCoordinatePosition) {
-    await this.platform.ready();
     this.geoposition = await this.geolocation.getCurrentPosition();
     const geoLong = this.geoposition.coords.longitude;
     console.log(geoLong);

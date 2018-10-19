@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { AlertController } from 'ionic-angular';
+import { AlertController, IonicPage } from 'ionic-angular';
 // import { AlertController} from "@ionic/angular";
 import { SiteDataProvider } from "../../providers/site-data/site-data";
 
+
+@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
